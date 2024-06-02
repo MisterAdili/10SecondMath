@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <section id = "item-list" class = "container">
+      <div class = "header row">
+        <div class = "col-xs-12">
+          <h1>
+            Ten Second Math
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2 id="question">
+            Click Button to Start
+          </h2>
+        </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <input type="text" id="answer" ></input>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>Time Remaining:  <span id="timer">0</span> seconds</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <p>Score:  <span id="score"></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-6">
+          <p>High Score:  <span id="highScore"></span></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          Number Limit: <input type="text" id="numberLimit" value = 10>
+          <button type="button" id="startButton">Start Game</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
