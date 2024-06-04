@@ -25,21 +25,17 @@ $(document).ready(function(){
   }
 
   $("#answer").on("keyup", function(){
-    answer3 = answer2;
-    answer2 = answer1;
-    answer1 = answer.value;
-    if (gameOn == true && (answer3 + answer2 + answer1 == a + b || answer2 + answer1 == a + b || answer1 == a + b)){
+    if (gameOn == true && answer.value == a + b){
       answer.value = "";
-      answer3 = "";
-      answer2 = "";
-      answer1 = "";
       score+=1;
       scoreHTML.innerHTML = score;
       seconds +=1;
       timerSpan.innerHTML = seconds;
       newQuestion();
     }
-    answer.value = "";
+    if(answer.value.length > (a+b).toString().length){
+      answer.value = "";
+    }
   });
 
   var stopGame = function(){
